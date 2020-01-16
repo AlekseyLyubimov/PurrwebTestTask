@@ -11,32 +11,153 @@
   color: @text-color-light;
 }
 
-.page-footer__navigation-header {
-  color: @text-color-orange;
+.page-footer__flex {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  align-content: flex-start;
 }
 
-.page-footer__navigation-list {
-  list-style-type: none;
+.page-footer__navigation {
+  width: 100%;
+}
+
+.page-footer__navigation-header {
+  color: @text-color-orange;
+  font-family: ProximaNovaBold;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.page-footer__navigation-header::before {
+  content: "";
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+  background-image: url(../img/hexagon.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  position: relative;
+  right: 5px;
+  bottom: 2px;
+}
+
+.page-footer__navigation-nav {
   padding: 0;
+}
+
+.page-footer__navigation-item {
+  display: block;
+  font-family: ProximaNovaRegular;
+  text-transform: uppercase;
+}
+
+.page-footer__links {
+  width: 100%;
 }
 
 .page-footer__links-header {
   color: @text-color-orange;
+  font-family: ProximaNovaBold;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.page-footer__links-header::before {
+  content: "";
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+  background-image: url(../img/hexagon.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  position: relative;
+  right: 5px;
+  bottom: 2px;
 }
 
 .page-footer__links-list {
   list-style-type: none;
   padding: 0;
+  margin-top: 5px;
+}
+
+.page-footer__links-item {
+  font-family: ProximaNovaRegular;
+  text-transform: uppercase;
+}
+
+.page-footer__contacts {
+  width: 100%;
 }
 
 .page-footer__contacts-header {
   color: @text-color-orange;
+  font-family: ProximaNovaBold;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.page-footer__contacts-header::before {
+  content: "";
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+  background-image: url(../img/hexagon.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  position: relative;
+  right: 5px;
+  bottom: 2px;
 }
 
 .page-footer__contacts-phone {
   display: block;
+  font-family: ProximaNovaRegular;
 }
 
 .page-footer__contacts-email {
   display: block;
+  font-family: ProximaNovaRegular;
+}
+
+.page-footer__logo {
+  height: 47px;
+  width: 47px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-self: flex-end;
+}
+
+.page-footer__signature {
+  background-color: #252525;
+  box-sizing: border-box;
+  width: 100vw;
+  margin-left: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.page-footer__signature-text {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  color: #9b9b9b;
+}
+
+.page-footer__copyright-claim::after {
+  content: "";
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  margin-left: 4px;
+  background-image: url(../img/hexagon.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
