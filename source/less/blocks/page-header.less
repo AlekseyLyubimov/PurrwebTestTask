@@ -43,6 +43,7 @@
   width: 40px;
   margin-top: 35px;
   margin-right: 20px;
+  cursor: pointer;
 }
 
 .page-heager__burger-line {
@@ -97,20 +98,29 @@
 }
 
 #menu-toggler:checked ~ .page-header__menu-nav {
-  max-height: 617px;
+  max-height: 573px;
+}
+
+.page-heager__burger-line--end {
+  transition: .15s all;
 }
 
 #menu-toggler:checked ~ .page-header__menu-button .page-heager__burger-line--end {
   opacity: 0;
-  transition: .2s all;
+}
+
+.page-heager__burger-line--northeast {
+  transition: .77s all;
 }
 
 #menu-toggler:checked ~ .page-header__menu-button .page-heager__burger-line--northeast {
   transform: rotate(-135deg);
-  transition: .65s all;
+}
+
+.page-heager__burger-line--northwest {
+  transition: .5s all;
 }
 
 #menu-toggler:checked ~ .page-header__menu-button .page-heager__burger-line--northwest {
   transform: rotate(135deg);
-  transition: .5s all;
 }

@@ -8,17 +8,32 @@
   padding-right: 20px;
   padding-left: 20px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .product-spotlight__header {
   color: @text-color-blue;
+  font-family: ProximaNovaBold;
+  font-size: 32px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-spotlight__text {
+  font-family: ProximaNovaRegular;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .product-spotlight__video {
-  width: 80vw;
-  height: 45vw;
+  width: 90vw;
+  height: 50.625vw;
 
   margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .product-spotlight__button {
@@ -26,10 +41,14 @@
   border-radius: 7px;
   width: 200px;
   height: 55px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: @background-button-orange;
 
   color: @text-color-light;
   text-transform: uppercase;
   font-family: ProximaNovaBold;
   font-size: 16px;
+
+  cursor: pointer;
 }
