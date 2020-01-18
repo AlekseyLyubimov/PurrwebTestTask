@@ -9,6 +9,13 @@
 
   position: relative;
   overflow: hidden;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
 
 .attention-grabber__input {
@@ -20,6 +27,13 @@
   padding: 0;
   width: 100vw;
   height: 530px;
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-content-width;
+    margin-left: auto;
+    margin-right: auto;
+    height: 450px;
+  }
 }
 
 .attention-grabber__slider-content {
@@ -33,20 +47,52 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-content: center;
+  align-items: center;
 
   transition: .65s all;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 140px;
+    padding-left: 140px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-content-width;
+    height: 400px;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin: 0;
+    margin-top: 63px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
 }
 
 .attention-grabber__slider-header {
   font-family: ProximaNovaBold;
   color: @text-color-light;
   font-size: 24px;
+
+  @media (min-width: @desktop-width) {
+    font-size: 55px;
+    letter-spacing: -0.005ch;
+    margin-bottom: 0;
+  }
 }
 
 .attention-grabber__slider-text {
   font-family: ProximaNovaSemibold;
   color: @text-color-light;
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    margin-top: 5px;
+    margin-left: 2px;
+    width: 460px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 3.1ch;
+  }
 }
 
 .attention-grabber__slider-button {
@@ -66,6 +112,16 @@
   font-size: 16px;
 
   cursor: pointer;
+
+  @media (min-width: @desktop-width) {
+    font-size: 14px;
+    margin: 0;
+    margin-top: 45px;
+    margin-left: 2px;
+    width: 174px;
+    height: 54px;
+    border-radius: 4px;
+  }
 }
 
 .attention-grabber__twitter-logo {
@@ -73,6 +129,15 @@
   height: 200px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    margin-right: 68px;
+    width: 150px;
+    height: 390px;
+    align-self: flex-end;
+    justify-self: center;
+  }
 }
 
 .attention-grabber__slider-switches {
@@ -82,7 +147,24 @@
   margin-right: auto;
   margin-bottom: 40px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    width: 45vw;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 20px;
+    height: 92px;
+    flex-direction: column;
+
+    position: absolute;
+    left: 50vw;
+
+    margin-left: 726px;
+    margin-top: 193px;
+  }
 }
 
 .attention-grabber__slider-switch {
@@ -94,12 +176,29 @@
   width: 30px;
   transition: .13s all;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    height: 40px;
+    width: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 20px;
+    width: 20px;
+    transform: rotate(90deg);
+  }
 }
 
 .attention-grabber__bottom-text {
   font-family: ProximaNovaBold;
   text-transform: uppercase;
   color: @text-color-light;
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    bottom: 125px;
+    font-size: 15px;
+  }
 }
 
 .attention-grabber::after {
@@ -111,6 +210,17 @@
   border-right: 50vw solid @background-light;
   border-left: 50vw solid @background-light;
   border-top: 50px solid #00000000;
+
+  @media (min-width: @tablet-width) {
+    height: 80px;
+    border-top: 80px solid #00000000;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 250px;
+    border-top: 250px solid #00000000;
+    margin-top: -35px;
+  }
 }
 
 
@@ -125,6 +235,10 @@
 
 #slider_button_1:checked ~ .attention-grabber__slider-switches .attention-grabber__slider-switch--1 {
   background-image: url(../img/hexagon.svg);
+  @media (min-width: @desktop-width) {
+    width: 22px;
+    height: 24px;
+  }
 }
 
 #slider_button_2:checked ~ .attention-grabber__slider-content--first-slide {
@@ -137,6 +251,10 @@
 
 #slider_button_2:checked ~ .attention-grabber__slider-switches .attention-grabber__slider-switch--2 {
   background-image: url(../img/hexagon.svg);
+  @media (min-width: @desktop-width) {
+    width: 22px;
+    height: 24px;
+  }
 }
 
 #slider_button_3:checked ~ .attention-grabber__slider-content--first-slide {
@@ -149,4 +267,8 @@
 
 #slider_button_3:checked ~ .attention-grabber__slider-switches .attention-grabber__slider-switch--3 {
   background-image: url(../img/hexagon.svg);
+  @media (min-width: @desktop-width) {
+    width: 22px;
+    height: 24px;
+  }
 }

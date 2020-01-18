@@ -14,6 +14,31 @@
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position: center;
+
+  @media (min-width: @desktop-width) {
+    background-size: cover;
+    margin-top: 0;
+    height: 218px;
+    position: relative;
+  }
+}
+
+.contact-us__header {
+  font-family: ProximaNovaBold;
+  color: @text-color-light;
+  font-size: 22px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 28px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 40px;
+    position: absolute;
+    left: 50vw;
+    margin-left: -578px;
+    margin-top: 60px;
+  }
 }
 
 .contact-us__button {
@@ -29,4 +54,16 @@
   font-size: 16px;
 
   cursor: pointer;
+
+  @media (min-width: @desktop-width) {
+    width: 171px;
+    height: 53px;
+
+    font-size: 14px;
+
+    position: absolute;
+    right: 50vw;
+    margin-right: -576px;
+    margin-top: 65px;
+  }
 }

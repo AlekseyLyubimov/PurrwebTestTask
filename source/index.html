@@ -12,25 +12,28 @@
 
     <body>
         <header class="page-header">
-            <div class="page-header__logo">
-                <object data="img/salt_logo.svg" type="image/svg+xml" class="page-header__logo-picture"></object>
-                <h1 class="page-header__logo-text">salt</h1>
+            <div class="page-header__container">
+                <div class="page-header__logo">
+                    <img class="page-header__logo-picture" src="img/salt-logo-png.png">
+                    <!-- <object data="img/salt_logo.svg" type="image/svg+xml" class="page-header__logo-picture"></object> -->
+                    <!-- <h1 class="page-header__logo-text">salt</h1> -->
+                </div>
+                <input class="page-header__menu-input" id="menu-toggler" type="checkbox" />
+                <label class="page-header__menu-button" for="menu-toggler">
+                    <div class="page-heager__burger-line page-heager__burger-line--end"></div>
+                    <div class="page-heager__burger-line page-heager__burger-line--northeast"></div>
+                    <div class="page-heager__burger-line page-heager__burger-line--northwest"></div>
+                    <div class="page-heager__burger-line page-heager__burger-line--end"></div>
+                </label>
+                <nav class="page-header__menu-nav">
+                    <a class="page-header__menu-item" href="#">Home</a>
+                    <a class="page-header__menu-item" href="#">Products</a>
+                    <a class="page-header__menu-item" href="#">Services</a>
+                    <a class="page-header__menu-item" href="#">Resources</a>
+                    <a class="page-header__menu-item" href="#">About</a>
+                    <a class="page-header__menu-item" href="#">Contact us</a>
+                </nav>
             </div>
-            <input class="page-header__menu-input" id="menu-toggler" type="checkbox" />
-            <label class="page-header__menu-button" for="menu-toggler">
-                <div class="page-heager__burger-line page-heager__burger-line--end"></div>
-                <div class="page-heager__burger-line page-heager__burger-line--northeast"></div>
-                <div class="page-heager__burger-line page-heager__burger-line--northwest"></div>
-                <div class="page-heager__burger-line page-heager__burger-line--end"></div>
-            </label>
-            <nav class="page-header__menu-nav">
-                <a class="page-header__menu-item" href="#">Home</a>
-                <a class="page-header__menu-item" href="#">Products</a>
-                <a class="page-header__menu-item" href="#">Services</a>
-                <a class="page-header__menu-item" href="#">Resources</a>
-                <a class="page-header__menu-item" href="#">About</a>
-                <a class="page-header__menu-item" href="#">Contact us</a>
-            </nav>
         </header>
 
         <main>
@@ -84,32 +87,44 @@
                 <h1 class="services__header">What We Do</h1>
                 <ul class="services__list">
                     <li class="services__list-element">
-                        <img class="services__element-icon services__element-icon--device-authentication" src="/img/device-authentication.png">
+                        <div class="services__icon-container">
+                            <img class="services__element-icon services__element-icon--device-authentication" src="/img/device-authentication.png">
+                        </div>
                         <h1 class="services__element-header">Device authentication</h1>
                         <p class="services__element-text">Hardware-based device fingerprinting resilient to cloning, malware and device jailbreak/root. Hardware-level control over the displayed UI independent of the device operating system. Hardware-level data protection.</p>
                     </li>
                     <li class="services__list-element">
-                        <img class="services__element-icon services__element-icon--user-authentication" src="/img/user_authentication.png">
+                        <div class="services__icon-container">
+                            <img class="services__element-icon services__element-icon--user-authentication" src="/img/user_authentication.png">
+                        </div>
                         <h1 class="services__element-header">User authentication</h1>
                         <p class="services__element-text">Verify the identity of users for access control with contemporary biometric connected MFA security tokens.</p>
                     </li>
                     <li class="services__list-element">
-                        <img class="services__element-icon services__element-icon--transaction-authentication" src="/img/transaction_authentication.png">
+                        <div class="services__icon-container">
+                           <img class="services__element-icon services__element-icon--transaction-authentication" src="/img/transaction_authentication.png">
+                        </div>
                         <h1 class="services__element-header">Transaction authentication</h1>
                         <p class="services__element-text">High assurance out-of-band authentication of high impact transactions and ibstructions initiated through electronic service delivery channels. Audit trail of verification for non-repudiation. Fraud protection against man-in-the-middle and browser malware.</p>
                     </li>
                     <li class="services__list-element">
-                        <img class="services__element-icon services__element-icon--authentication-methods" src="/img/authentication-methods.svg">
+                        <div class="services__icon-container">
+                            <img class="services__element-icon services__element-icon--authentication-methods" src="/img/authentication-methods.svg">
+                        </div>
                         <h1 class="services__element-header">Contemporary authentication methods</h1>
                         <p class="services__element-text">Echidna authentication server to enable adaptive risk-based approach to security through a range of methods for different levels of authentication assurance from SMS OTPs, Challenge/Response, to more contemporary QR code signing and advanced connected mobile security tokens, capable of transaction signatures with dynamic linking of the transaction context and addition of PIN, Fingerprint and other biometrics.</p>
                     </li>
                     <li class="services__list-element">
-                        <img class="services__element-icon services__element-icon--hsm-solutions" src="/img/hsm_solutions.svg">
+                        <div class="services__icon-container">
+                            <img class="services__element-icon services__element-icon--hsm-solutions" src="/img/hsm_solutions.svg">
+                        </div>
                         <h1 class="services__element-header">HSM solutions</h1>
                         <p class="services__element-text">Reseller of Thales nShield HSMs with professional services and subject matter expertise in HSMs, key ceremony procedures, and SEE code development.</p>
                     </li>
                     <li class="services__list-element">
-                      <img class="services__element-icon services__element-icon--cloud-security" src="/img/cloud-security.png">
+                        <div class="services__icon-container">
+                            <img class="services__element-icon services__element-icon--cloud-security" src="/img/cloud-security.png">
+                        </div>
                         <h1 class="services__element-header">Cloud & IOT security</h1>
                         <p class="services__element-text">Secure the identity and access of users, devices and Internet of Things connecting into the cloud. Support cloud adoption and mitigation of applications and data into private and public clouds.</p>
                     </li>
@@ -131,9 +146,11 @@
 
         <footer class="page-footer">
             <div class="page-footer__flex">
-                <a class="twitter-timeline" data-width="300" data-height="300" href="https://twitter.com/deepquestionbot?ref_src=twsrc%5Etfw">Tweets by deepquestionbot</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                <section class="page-footer__navigation">
-                    <h1 class="page-footer__navigation-header">Navigation</h1>
+                <section class="page-footer__twitter-feed">
+                  <a class="twitter-timeline" data-width="300" data-height="300" href="https://twitter.com/deepquestionbot?ref_src=twsrc%5Etfw">Tweets by deepquestionbot</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </section>
+                <section class="page-footer__column">
+                    <h1 class="page-footer__header">Navigation</h1>
                     <nav class="page-footer__navigation-nav">
                         <a class="page-footer__navigation-item" href="#">Home</a>
                         <a class="page-footer__navigation-item" href="#">Products</a>
@@ -143,8 +160,8 @@
                         <a class="page-footer__navigation-item" href="#">Contact us</a>
                     </nav>
                 </section>
-                <section class="page-footer__links">
-                    <h1 class="page-footer__links-header">Links</h1>
+                <section class="page-footer__column">
+                    <h1 class="page-footer__header">Links</h1>
                     <ul class="page-footer__links-list">
                         <li class="page-footer__links-item">Disclaimer</li>
                         <li class="page-footer__links-item">Legal</li>
@@ -152,8 +169,8 @@
                         <li class="page-footer__links-item">Privacy</li>
                     </ul>
                 </section>
-                <section class="page-footer__contacts">
-                    <h1 class="page-footer__contacts-header">Contact sales</h1>
+                <section class="page-footer__column">
+                    <h1 class="page-footer__header">Contact sales</h1>
                     <a class="page-footer__contacts-phone" href="tel: +61 3 9614 4416">PHONE: +61 3 9614 4416</a>
                     <a class="page-footer__contacts-email" href="sales@saltgroup.com.au">EMAIL: sales@saltgroup.com.au</a>
                 </section>

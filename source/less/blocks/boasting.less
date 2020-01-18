@@ -10,11 +10,27 @@
 
   color: @text-color-blue;
   font-family: ProximaNovaBold;
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
 }
 
 .boasting__list {
   list-style-type: none;
   padding: 0;
+
+  @media (min-width: @desktop-width) {
+    width: @desktop-content-width;
+    height: 382px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 
@@ -22,15 +38,34 @@
   box-sizing: border-box;
   width: 100%;
   text-align: center;
+
+  @media (min-width: @desktop-width) {
+    width: 256px;
+    margin-left: 28px;
+    margin-right: 28px;
+    margin-top: -30px;
+  }
 }
 
 .boasting__list-header {
   font-size: 40px;
   margin-bottom: 0;
+
+  @media (min-width: @desktop-width) {
+    font-size: 60px;
+  }
 }
 
 .boasting__list-text {
   text-transform: uppercase;
   font-size: 14px;
   margin-top: 0;
+
+  @media (min-width: @desktop-width) {
+    font-size: 15px;
+    margin-top: 9px;
+    letter-spacing: 0.01em;
+    position: relative;
+    left: 3px;
+  }
 }

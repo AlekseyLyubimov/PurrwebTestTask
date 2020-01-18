@@ -10,6 +10,12 @@
   padding-right: 20px;
   padding-left: 20px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 68px;
+  }
 }
 
 .services__header {
@@ -17,6 +23,16 @@
   font-family: ProximaNovaBold;
   font-size: 40px;
   margin-top: 47px;
+
+  @media (min-width: @desktop-width) {
+    box-sizing: border-box;
+    width: 910px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 142px;
+    text-align: right;
+    font-size: 60px;
+  }
 }
 
 .services__header::before {
@@ -30,23 +46,67 @@
   background-color: #00000000;
   border-top: 12px solid @background-button-orange;
   border-right: 12px solid @background-button-orange;
+
+  @media (min-width: @desktop-width) {
+    right: 50vw;
+    margin-right: -503px;
+    top: 122px;
+  }
 }
 
 .services__list {
   list-style-type: none;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 915px;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    justify-content: space-between;
+    position: relative;
+    left: 8px;
+    top: 24px;
+  }
 }
 
 .services__list-element {
   box-sizing: border-box;
   width: 100%;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 50%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 283px;
+    padding: 0;
+    text-align: left;
+  }
 }
 
 .services__element-header {
   color: @text-color-blue;
   font-family: ProximaNovaBold;
   text-transform: uppercase;
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    letter-spacing: -0.02em;
+    line-height: 1.2em;
+    margin: 0;
+  }
 }
 
 .services__element-text {
@@ -54,9 +114,33 @@
   font-family: ProximaNovaRegular;
   font-size: 15px;
   padding-bottom: 45px;
+
+  @media (min-width: @desktop-width) {
+    line-height: 1.5em;
+    padding: 0;
+    margin: 0;
+    margin-top: 4px;
+    margin-bottom: 35px;
+  }
+}
+
+.services__icon-container {
+  height: 150px;
+  width: 190px;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 17px;
+  }
 }
 
 .services__element-icon {
   max-height: 150px;
-  max-width: 190px;
+  max-width: 210px;
 }

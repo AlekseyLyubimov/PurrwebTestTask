@@ -3,7 +3,7 @@
   width: 100vw;
   background-color: @background-light;
   margin: 0;
-  padding-top: 5px;
+  padding-top: 7px;
   padding-bottom: 5px;
   padding-right: 20px;
   padding-left: 20px;
@@ -11,6 +11,23 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+
+  @media (min-width: @desktop-width) {
+    padding-top: 105px;
+    padding-bottom: 118px;
+    padding-right: 0;
+    padding-left: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    height: 678px;
+    width: 1300px;
+    text-align: left;
+    align-items: flex-start;
+
+    position: relative;
+    left: 12px;
+  }
 }
 
 .product-spotlight__header {
@@ -19,12 +36,30 @@
   font-size: 32px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    width: 455px;
+    font-size: 41px;
+    letter-spacing: -0.01em;
+    margin-top: 97px;
+    margin-left: -5px;
+  }
 }
 
 .product-spotlight__text {
   font-family: ProximaNovaRegular;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    margin-top: 8px;
+    width: 460px;
+    font-size: 14px;
+    letter-spacing: 0.025em;
+    line-height: 1.6em;
+  }
 }
 
 .product-spotlight__video {
@@ -34,6 +69,13 @@
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    height: 452px;
+    width: 724px;
+    align-self: flex-end;
+  }
 }
 
 .product-spotlight__button {
@@ -51,4 +93,12 @@
   font-size: 16px;
 
   cursor: pointer;
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    width: 170px;
+    height: 53px;
+    margin-top: 30px;
+    font-size: 14px;
+  }
 }
