@@ -63,7 +63,7 @@ gulp.task("reload_page", function () {
 
 gulp.task("copy", function () {
   return gulp.src([
-    "source/fonts/**/*.{wodd,woff2}",
+    "source/fonts/**/*.woff",
     "source/img/**",
     "source/js/**",
     "source/**.ico",
