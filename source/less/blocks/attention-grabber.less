@@ -1,6 +1,6 @@
 .attention-grabber {
   box-sizing: border-box;
-  width: 100vw;
+  width: 100%;
   background-color: @background-blue;
   margin: 0;
   margin-top: -1px;
@@ -25,7 +25,7 @@
 .attention-grabber__slider-standin {
   margin: 0;
   padding: 0;
-  width: 100vw;
+  width: 100%;
   height: 530px;
 
   @media (min-width: @desktop-width) {
@@ -40,7 +40,7 @@
   box-sizing: border-box;
   padding-right: 25px;
   padding-left: 25px;
-  width: 100vw;
+  width: 100%;
   position: absolute;
   top: 0;
 
@@ -160,9 +160,7 @@
     flex-direction: column;
 
     position: absolute;
-    left: 50vw;
-
-    margin-left: 726px;
+    right: 53px;
     margin-top: 193px;
   }
 }
@@ -201,24 +199,40 @@
   }
 }
 
+.attention-grabber__bottom-button {
+  width: 61px;
+  height: 71px;
+  border: 0;
+  background-color: @background-blue;
+  background-image: url(../img/find-out-more-button.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    bottom: 49px;
+    font-size: 15px;
+  }
+}
+
 .attention-grabber::after {
   content: "";
   display: block;
   box-sizing: border-box;
-  width: 100vw;
+  width: 100%;
   height: 50px;
-  border-right: 50vw solid @background-light;
-  border-left: 50vw solid @background-light;
-  border-top: 50px solid #00000000;
+
+  background:
+  linear-gradient(to right top, #ffffff 50%, transparent 50%) left / 50.025% 100% no-repeat,
+  linear-gradient(to left top, #ffffff 50%, transparent 50%) right / 50.025% 100% no-repeat;
 
   @media (min-width: @tablet-width) {
     height: 80px;
-    border-top: 80px solid #00000000;
   }
 
   @media (min-width: @desktop-width) {
     height: 250px;
-    border-top: 250px solid #00000000;
     margin-top: -35px;
   }
 }
@@ -227,10 +241,20 @@
 
 #slider_button_1:checked ~ .attention-grabber__slider-content--second-slide {
   transform: translateX(100vw);
+
+  @media (min-width: @desktop-width) {
+    transform: translateX(0);
+    transform: translateY(200%);
+  }
 }
 
 #slider_button_1:checked ~ .attention-grabber__slider-content--third-slide {
   transform: translateX(200vw);
+
+  @media (min-width: @desktop-width) {
+    transform: translateX(0);
+    transform: translateY(300%);
+  }
 }
 
 #slider_button_1:checked ~ .attention-grabber__slider-switches .attention-grabber__slider-switch--1 {
@@ -243,10 +267,20 @@
 
 #slider_button_2:checked ~ .attention-grabber__slider-content--first-slide {
   transform: translateX(-100vw);
+
+  @media (min-width: @desktop-width) {
+    transform: translateX(0);
+    transform: translateY(-200%);
+  }
 }
 
 #slider_button_2:checked ~ .attention-grabber__slider-content--third-slide {
   transform: translateX(100vw);
+
+  @media (min-width: @desktop-width) {
+    transform: translateX(0);
+    transform: translateY(200%);
+  }
 }
 
 #slider_button_2:checked ~ .attention-grabber__slider-switches .attention-grabber__slider-switch--2 {
@@ -259,10 +293,20 @@
 
 #slider_button_3:checked ~ .attention-grabber__slider-content--first-slide {
   transform: translateX(-200vw);
+
+  @media (min-width: @desktop-width) {
+    transform: translateX(0);
+    transform: translateY(-300%);
+  }
 }
 
 #slider_button_3:checked ~ .attention-grabber__slider-content--second-slide {
   transform: translateX(-100vw);
+
+  @media (min-width: @desktop-width) {
+    transform: translateX(0);
+    transform: translateY(-200%);
+  }
 }
 
 #slider_button_3:checked ~ .attention-grabber__slider-switches .attention-grabber__slider-switch--3 {

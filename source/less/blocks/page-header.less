@@ -1,6 +1,6 @@
 .page-header {
   box-sizing: border-box;
-  width: 100vw;
+  width: 100%;
   background-color: @background-blue;
   margin: 0;
   padding-bottom: 5px;
@@ -136,12 +136,19 @@
 
   @media (min-width: @desktop-width) {
     width: auto;
+    height: auto;
     margin: 0;
-    margin-left: 29px;
+    margin-left: 26px;
+    margin-right: -3px;
+    padding-left: 3px;
+    padding-right: 3px;
 
     text-transform: uppercase;
     font-size: 14px;
     letter-spacing: 0.04em;
+
+    display: inline-block;
+    padding-bottom: 5px;
   }
 }
 
@@ -176,7 +183,7 @@
 
 .page-header__menu-item:hover {
   @media (min-width: @desktop-width) {
-    text-decoration: underline;
+    border-bottom: 3px solid @text-color-orange;
   }
 }
 
